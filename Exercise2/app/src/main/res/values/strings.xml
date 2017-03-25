@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Exercise2</string>
+	<string name="emailHint">Your email</string>
+	<string name="nameHint">Your name</string>
+	<string name="exerciseTitle">Exercise 2 Going MAD!</string>
+	<string name="phoneHint">Your phone</string>
+	<string name="submitButtonText">Submit</string>
+	<string name="clearAllButtonText">Clear All</string>
+	<string name="exitButtonText">Exit</string>
+
+	<string-array name="phoneTypes">
+		<item>Home</item>
+		<item>Work</item>
+		<item>Mobile</item>
+	</string-array>
+</resources>
