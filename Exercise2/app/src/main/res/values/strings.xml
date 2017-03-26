@@ -1,15 +1,20 @@
 <resources>
 	<string name="app_name">Exercise2</string>
-	<string name="emailHint">Your email</string>
-	<string name="nameHint">Your name</string>
-	<string name="exerciseTitle">Exercise 2 Going MAD!</string>
-	<string name="phoneHint">Your phone</string>
-	<string name="submitButtonText">Submit</string>
-	<string name="clearAllButtonText">Clear All</string>
-	<string name="exitButtonText">Exit</string>
-	<string name="submitButtonSnackbar">Submit button clicked!</string>
+	<string name="heading_text">Exercise 2 Going MAD!</string>
 
-	<string-array name="phoneTypes">
+	<string name="email_text_hint">Your email</string>
+	<string name="name_text_hint">Your name</string>
+	<string name="number_text_hint">Your phone</string>
+	<string name="agreement_checkbox_text">I Agree</string>
+
+	<string name="submit_button_text">Submit</string>
+	<string name="clear_button_text">Clear All</string>
+	<string name="exit_button_text">Exit</string>
+
+	<string name="snackbar_disagree">I Disagree</string>
+	<string name="snackbar_agree">I Agree</string>
+
+	<string-array name="phone_types">
 		<item>Home</item>
 		<item>Work</item>
 		<item>Mobile</item>

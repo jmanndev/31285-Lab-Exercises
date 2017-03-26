@@ -48,7 +48,7 @@
 					android:layout_width="wrap_content"
 					android:layout_height="match_parent"
 					android:layout_weight="3.06"
-					android:text="@string/exerciseTitle"
+					android:text="@string/heading_text"
 					android:textAlignment="center"
 					android:textSize="20sp"
 					android:textStyle="bold"/>
@@ -59,7 +59,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:ems="10"
-				android:hint="@string/nameHint"
+				android:hint="@string/name_text_hint"
 				android:inputType="textPersonName"
 				/>
 
@@ -68,7 +68,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:ems="10"
-				android:hint="@string/emailHint"
+				android:hint="@string/email_text_hint"
 				android:inputType="textEmailAddress"/>
 
 			<LinearLayout
@@ -81,14 +81,14 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:ems="10"
-					android:hint="@string/phoneHint"
+					android:hint="@string/number_text_hint"
 					android:inputType="number|phone"/>
 
 				<Spinner
 					android:id="@+id/numberTypeDropdown"
 					android:layout_width="match_parent"
 					android:layout_height="match_parent"
-					android:entries="@array/phoneTypes"
+					android:entries="@array/phone_types"
 					android:spinnerMode="dropdown"/>
 
 			</LinearLayout>
@@ -105,21 +105,24 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_weight="1"
-					android:text="@string/submitButtonText"/>
+					android:onClick="submitButtonClickHandler"
+					android:text="@string/submit_button_text"/>
 
 				<Button
 					android:id="@+id/clearAllButton"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_weight="1"
-					android:text="@string/clearAllButtonText"/>
+					android:onClick="clearButtonClickHandler"
+					android:text="@string/clear_button_text"/>
 
 				<Button
 					android:id="@+id/exitButton"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_weight="1"
-					android:text="@string/exitButtonText"/>
+					android:onClick="exitButtonClickHandler"
+					android:text="@string/exit_button_text"/>
 
 			</LinearLayout>
 
