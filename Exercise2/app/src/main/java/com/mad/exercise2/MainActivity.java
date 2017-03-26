@@ -38,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
 				clearAllForms();
 			}
 		});
+
+		exitBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//exit code here  dont use system.exit()
+			}
+		});
+
 	}
 
 
