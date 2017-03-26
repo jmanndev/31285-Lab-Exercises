@@ -7,6 +7,7 @@
 	<string name="submitButtonText">Submit</string>
 	<string name="clearAllButtonText">Clear All</string>
 	<string name="exitButtonText">Exit</string>
+	<string name="submitButtonSnackbar">Submit button clicked!</string>
 
 	<string-array name="phoneTypes">
 		<item>Home</item>
