@@ -1,3 +1,10 @@
 <resources>
 	<string name="app_name">Exercise 3</string>
+	<string name="android_logo_content_description">Android Logo</string>
+	<string name="swap_button_text">Swap</string>
+	<string name="rotate_button_text">Rotate</string>
+	<string name="first_name_label">First name</string>
+	<string name="last_name_label">Last name</string>
+	<string name="phone_label">Phone</string>
+	<string name="email_label">Email</string>
 </resources>

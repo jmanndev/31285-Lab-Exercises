@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.mad.exercise3.MainActivity"
+	android:background="@color/landscapeBackground">
+
+
+	<include
+		android:id="@+id/include"
+		layout="@layout/content_main"/>
+
+	<!-- Check content_main.xml for click listener implementation.  It made more sense to put it there instead of rewriting it for both layouts -->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.mad.exercise3.MainActivity"
+	tools:showIn="@layout/activity_main">
+
+	<RelativeLayout
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginBottom="8dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:layout_constraintBottom_creator="1"
+		tools:layout_constraintLeft_creator="1"
+		tools:layout_constraintRight_creator="1"
+		tools:layout_constraintTop_creator="1">
+
+		<ImageView
+			android:id="@+id/picture"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_centerHorizontal="true"
+			android:contentDescription="@string/android_logo_content_description"/>
+
+		<LinearLayout
+			android:id="@+id/buttonsLinearLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/swapButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/swap_button_text"
+				tools:ignore="ButtonStyle"/>
+
+			<Button
+				android:id="@+id/rotateButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:onClick="onClick"
+				android:text="@string/rotate_button_text"
+				tools:ignore="ButtonStyle"/>
+		</LinearLayout>
+
+		<ScrollView
+			android:id="@+id/scrollView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_above="@id/buttonsLinearLayout"
+			android:layout_below="@+id/picture">
+
+			<TableLayout
+				android:id="@+id/tableLayout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:shrinkColumns="0"
+				android:stretchColumns="1">
+
+				<TableRow
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/firstNameLabel"
+						android:layout_width="wrap_content"
+						android:layout_column="0"
+						android:text="@string/first_name_label"/>
+
+					<EditText
+						android:id="@+id/firstNameEntryText"
+						android:layout_width="wrap_content"
+						android:layout_column="1"
+						android:ems="10"
+						android:inputType="textPersonName"/>
+				</TableRow>
+
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/lastNameLabel"
+						android:layout_width="wrap_content"
+						android:layout_column="0"
+						android:text="@string/last_name_label"/>
+
+					<EditText
+						android:id="@+id/lastNameEntryText"
+						android:layout_width="match_parent"
+						android:layout_column="1"
+						android:ems="10"
+						android:inputType="textPersonName"/>
+				</TableRow>
+
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/phoneLabel"
+						android:layout_width="wrap_content"
+						android:layout_column="0"
+						android:text="@string/phone_label"/>
+
+					<EditText
+						android:id="@+id/phoneEntryText"
+						android:layout_width="match_parent"
+						android:layout_column="1"
+						android:ems="10"
+						android:inputType="phone"/>
+
+				</TableRow>
+
+				<TableRow
+					android:layout_width="fill_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/emailLabel"
+						android:layout_width="wrap_content"
+						android:layout_column="0"
+						android:text="@string/email_label"/>
+
+					<EditText
+						android:id="@+id/emailEntryText"
+						android:layout_width="match_parent"
+						android:layout_column="1"
+						android:ems="10"
+						android:inputType="textEmailAddress"/>
+				</TableRow>
+			</TableLayout>
+		</ScrollView>
+
+	</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
