@@ -2,4 +2,14 @@
     <string name="app_name">Exercise 4</string>
     <string name="_3_joke_button_text">3 JOKE</string>
     <string name="_1_joke_button_text">1 JOKE</string>
+    <string name="progress_bar_text">Downloading joke</string>
+    <string name="download_fail_text">Failed to download joke</string>
+    <string name="download_fail_text_plural">Failed to download jokes</string>
+    <string name="joke_length_spinner_label">Joke length:</string>
+    <string name="length_selected_toast">jokes selected</string>
+    <string-array name="joke_lengths">
+        <item>Short</item>
+        <item>Medium</item>
+        <item>Long</item>
+    </string-array>
 </resources>

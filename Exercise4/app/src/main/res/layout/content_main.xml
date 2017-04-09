@@ -48,21 +48,57 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onClick"
                 android:text="@string/_3_joke_button_text" />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/jokeText"
+
+        <LinearLayout
+            android:id="@+id/jokeSpinnerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:background="@color/activityWhite"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/joke_length_spinner_label" />
+
+            <Spinner
+                android:id="@+id/jokeLengthSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/joke_lengths"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/buttonsLinearLayout"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:gravity="center_vertical|center_horizontal"
-            android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView"
-            android:textAlignment="center"
-            android:textSize="30sp" />
+            android:layout_below="@id/jokeSpinnerLayout"
+            android:padding="8dp"
+            android:background="@drawable/customborder">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/jokeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </ScrollView>
 
     </RelativeLayout>
 
