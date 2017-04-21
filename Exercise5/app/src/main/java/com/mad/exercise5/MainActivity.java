@@ -43,10 +43,30 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id) {
+            case R.id.action_delete_all:
+                actionDeleteAll();
+                return true;
+            case R.id.action_quit:
+                actionQuit();
+                return true;
+            case R.id.action_refresh:
+                actionRefresh();
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void actionDeleteAll() {
+
+    }
+
+    private void actionQuit() {
+
+    }
+
+    private void actionRefresh() {
+
     }
 }
