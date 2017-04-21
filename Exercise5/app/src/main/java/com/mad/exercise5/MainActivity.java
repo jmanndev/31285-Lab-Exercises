@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -26,6 +28,16 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        //String platform, int arrivalTime, String status, String destination, String destinationTime
+
+        ArrayList<Train> trains = new ArrayList<>();
+        trains.add(new Train("Albion Park Platform 1", 3, "On time", "Allawah", "14:11"));
+        trains.add(new Train("Arncliffe Platform 2", 4, "Late", "Central", "14:34"));
+        trains.add(new Train("Artarmon Platform 3", 7, "On time", "Ashfield", "15:01"));
+        trains.add(new Train("Berowra Platform 4", 12, "Late", "Beverly", "15:18"));
+
+        TrainAdapter trainAdapter = new TrainAdapter(this, trains);
     }
 
     @Override

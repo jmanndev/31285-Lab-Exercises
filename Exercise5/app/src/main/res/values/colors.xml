@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#222222</color>
     <color name="colorFABTint">#F02626</color>
+    <color name="colorTrainTimeText">#33b5e5</color>
+    <color name="colorTrainAccent">#699b37</color>
+    <color name="colorTrainBackground">#f8f9f9</color>
+    <color name="colorTrainPrimary">#797a7a</color>
 </resources>
