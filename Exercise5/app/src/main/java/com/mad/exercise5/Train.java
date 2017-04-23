@@ -8,8 +8,17 @@ public class Train {
     private String mDestination​;
     private String mDestinationTime​;
 
+    public Train() {
+
+    }
+
     public Train(String platform, int arrivalTime, String status, String destination, String destinationTime) {
 
+        mPlatform = platform;
+        mArrivalTime = arrivalTime;
+        mStatus = status;
+        mDestinationTime​ = destinationTime;
+        mDestination​ = destination;
     }
 
     public String getDestinationTime​() {

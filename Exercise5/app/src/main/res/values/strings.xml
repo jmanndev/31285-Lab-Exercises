@@ -3,4 +3,5 @@
     <string name="action_delete_all">Delete All</string>
     <string name="action_quit">Quit</string>
     <string name="action_refresh">Refresh</string>
+    <string name="arrival_time_min_suffix">min</string>
 </resources>
