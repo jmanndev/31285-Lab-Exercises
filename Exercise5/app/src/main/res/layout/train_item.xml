@@ -61,7 +61,6 @@
             android:id="@+id/textview_platform"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="_Artarmon Platform 3"
             android:textColor="@color/colorTrainPrimary"
             android:textSize="16sp" />
 
@@ -69,7 +68,7 @@
             android:id="@+id/textview_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="_14:14"
+            android:text="14:14"
             android:textColor="@color/colorTrainPrimary"
             android:textStyle="bold" />
 
@@ -77,7 +76,6 @@
             android:id="@+id/textview_status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="_On time"
             android:textColor="@color/colorTrainAccent"
             android:textSize="20sp" />
     </LinearLayout>
@@ -95,7 +93,6 @@
             android:id="@+id/textview_destination_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="_15:01"
             android:textColor="@color/colorTrainTimeText"
             android:textStyle="bold" />
 
@@ -103,7 +100,6 @@
             android:id="@+id/textview_destination"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="_Ashfield"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
     </LinearLayout>
