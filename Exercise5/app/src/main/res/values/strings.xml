@@ -4,4 +4,6 @@
     <string name="action_quit">Quit</string>
     <string name="action_refresh">Refresh</string>
     <string name="arrival_time_min_suffix">min</string>
+    <string name="train_status_late">Late</string>
+    <string name="train_status_ontime">On time</string>
 </resources>
