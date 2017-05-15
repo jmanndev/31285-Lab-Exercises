@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/colorTrainBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/train_time_layout"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorTrainAccent"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp">
+
+        <ProgressBar
+            android:id="@+id/train_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textview_arrival_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="_7\n min"
+            android:textColor="@color/colorTrainBackground"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/train_platform_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/train_time_layout"
+        android:layout_toRightOf="@+id/train_time_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_platform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="_Artarmon Platform 3"
+            android:textColor="@color/colorTrainPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textview_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="_14:14"
+            android:textColor="@color/colorTrainPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="_On time"
+            android:textColor="@color/colorTrainAccent"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/train_destination_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_destination_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="_15:01"
+            android:textColor="@color/colorTrainTimeText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="_Ashfield"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
